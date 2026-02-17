@@ -80,7 +80,23 @@
 
 
 }
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.btNormal {
+  @apply bg-verde-300 text-verde-100 border-verde-100 border-2 font-semibold hover:shadow-xl hover:text-xl hover:drop-shadow-[0_0_10px_#0FF25E] transition-all rounded-2xl p-2;
+}
+.btN2 {
+  @apply  inline-flex px-8 py-4 rounded-2xl font-medium bg-verde-200 text-foreground transition-all shadow-lg hover:drop-shadow-[0_0_10px_#099B3C] hover:opacity-90;
+}
+  
 @layer base {
   * {
     @apply border-border outline-ring/50;

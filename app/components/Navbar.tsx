@@ -2,24 +2,27 @@ import Link from "next/link"
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 bg-azul-300 backdrop-blur-md border-b rounded-b-2xl border-azul-100 shadow-sm">
+    <nav className="sticky top-0 z-50 bg-verde-300 backdrop-blur-md border-b-2 rounded-b-2xl border-verde-100 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 text-azul">
           <Link href="/" className="font-semibold text-lg text-verde-100">
             Prazer, eu sou o Jailton
           </Link>
 
-          <div className="flex gap-6 text-sm">
-            <Link href="/sobreProjeto" className="hover:opacity-80">
+          <div className="flex gap-5 text-ms font-semibold text-azul-100 flex-wrap">
+            <Link href="/sobreProjeto">
               Sobre este projeto
             </Link>
-            <Link href="#como-trabalho" className="hover:opacity-80">
+            <div className="h-7 border border-verde-100"></div>
+            <Link href="#como-trabalho">
               Como trabalho
             </Link>
-            <Link href="#como-comecei" className="hover:opacity-80">
+            <div className="h-7 border border-verde-100"></div>
+            <Link href="#como-comecei">
               Como comecei
             </Link>
-            <Link href="#valores" className="hover:opacity-80">
+            <div className="h-7 border border-verde-100"></div>
+            <Link href="#valores">
               Meus valores
             </Link>
           </div>

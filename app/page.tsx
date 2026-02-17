@@ -1,54 +1,86 @@
 "use client"
 
-import { Music, Users, Heart, Code } from "lucide-react"
+import { Music, Users, Heart, Code, CardSim } from "lucide-react"
 import Navbar from "./components/Navbar"
 import Rodape from "./components/Rodape"
-import Card from "./components/Card"
+import Card from "./components/reutilizaveis/Card"
 import BtContato from "./components/BtContato"
+import Carousel from "./components/reutilizaveis/Carousel"
+import CardSlim from "./components/reutilizaveis/CardSlim"
 
 export default function page() {
+    const eventos = [
+    {
+      titulo: "Arnold 2026 | Feira",
+      subtitulo: "Arnold 2026 | Feira",
+      data: "24 a 26 de abril",
+      local: "Expo Center Norte - SP",
+      imagem: "/devs.jpg",
+      link: "/pgTestes"
+    },
+    {
+      titulo: "Tech Summit 2026",
+      subtitulo: "Inovação e tecnologia",
+      data: "10 de maio",
+      local: "São Paulo - SP",
+      imagem: "/dormir.png",
+    },{
+      titulo: "Hackathon 2026",
+      subtitulo: "Desafios de programação",
+      data: "15 a 17 de junho",
+      local: "Online",
+      imagem: "/codigo.png",
+    },{
+      titulo: "Conferência de IA 2026",
+      subtitulo: "Inteligência Artificial e Futuro",
+      data: "5 de julho",
+      local: "Rio de Janeiro - RJ",
+      imagem: "/isso.png",
+    },
+  ]
 
-  const cards = [
+  const cardSlim = [
     {
       titulo: "Música",
-      descricao: "A música é minha companheira constante, inspirando criatividade e trazendo alegria para minha vida.",
-      imgJPG: "/devs.jpg",
-      local: "/pgTestes",
-      corText: "text-verde-100",
-      corBg: "bg-verde-300",
-      shadow: "040F0F",
-      border: "border-verde-100"
-    },
-  ]
-  
-  const cards2 = [
-    {
-      titulo: "familia",
-      descricao: "A família é minha maior fonte de alegria e apoio.",
-      imgJPG: "/codigo.png",
-      local: "/pgTestes",
-      corText: "text-azul-100",
-      corBg: "bg-azul-300",
-      shadow: "0C2A33",
-      border: "border-azul-100"
-    },
-  ]
-
-  const cards3 = [
-    {
-      titulo: "amigos",
-      descricao: "Amigos são os companheiros que compartilham alegria e desafios.",
-      imgJPG: "/isso.png",
-      local: "/pgTestes",
-      corText: "text-amarelo-100",
+      descricao: "A música inspira criatividade e energia.",
+      imagem: "/devs.jpg",
+      corTitulo: "text-amarelo-100",
+      corDescricao: "text-amarelo-100",
       corBg: "bg-amarelo-300",
-      shadow: "463400",
-      border: "border-amarelo-100"
-    },
+      border: "border-amarelo-100",
+      shadow: " hover:drop-shadow-[0_0_5px_#F7B500] transition-all"
+    },{
+      titulo: "Música",
+      descricao: "A música inspira criatividade e energia.",
+      imagem: "/codigo.png",
+      corTitulo: "text-amarelo-100",
+      corDescricao: "text-amarelo-100",
+      corBg: "bg-amarelo-300",
+      border: "border-amarelo-100",
+      shadow: " hover:drop-shadow-[0_0_5px_#F7B500] transition-all"
+    },{
+      titulo: "Música",
+      descricao: "A música inspira criatividade e energia.",
+      imagem: "/isso.png",
+      corTitulo: "text-amarelo-100",
+      corDescricao: "text-amarelo-100",
+      corBg: "bg-amarelo-300",
+      border: "border-amarelo-100",
+      shadow: " hover:drop-shadow-[0_0_5px_#F7B500] transition-all"
+    },{
+      imagem: "/dormir.png",
+      titulo: "Música",
+      descricao: "A música inspira criatividade e energia.",
+      corTitulo: "text-amarelo-100",
+      corDescricao: "text-amarelo-100",
+      corBg: "bg-amarelo-300",
+      border: "border-amarelo-100",
+      shadow: " hover:drop-shadow-[0_0_5px_#F7B500] transition-all"
+    }
   ]
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground flex flex-col gap-15">
       <Navbar />
       <header className="container mx-auto px-4 py-16 md:py-20">
         <div className="max-w-4xl mx-auto text-center">
@@ -56,114 +88,50 @@ export default function page() {
             Prazer, eu sou o Jailton
           </h1>
 
-          <p className="text-lg md:text-xl leading-relaxed text-preto-100">
+          <p className="text-lg md:text-xl leading-relaxed text-azul-100">
             Um espaço para você me conhecer além do código — compartilhando minha trajetória,
             valores e paixão por tecnologia.
           </p>
         </div>
       </header>
 
-      <section className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-3 gap-6">
+      <Carousel eventos={eventos} />
 
-          {/* SOBRE MIM */}
-          <div
-            id="sobre-mim"
-            className="scroll-mt-20 rounded-xl p-4 bg-azul-300 shadow-lg drop-shadow-[0_0_20px_#0C2A33]"
-          >
-            <h2 className="text-2xl font-bold mb-6 pb-2 text-azul-100 border-b-2 border-azul-200">
-              Sobre mim
-            </h2>
-
-            <div className="rounded-2xl aspect-video mb-6 overflow-hidden border-2 border-azul-100 bg-quatro">
-              <img
-                src="/friendly-developer-portrait.jpg"
-                alt="Jailton"
-                className="w-full h-full object-cover"
-              />
+      <header className="container mx-auto px-4 py-12 flex flex-col gap-5">
+        <div className=" flex flex-col gap-10">
+          <h1 className="text-3xl text-start font-semibold text-azul-100 ">Valores que me definem</h1>
+          <div className=" flex justify-center items-center gap-10">
+            <div className="w-fit h-fit mx-auto text-center border-azul-100 border rounded-2xl p-8 bg-azul-300 shadow-lg drop-shadow-[0_0_20px_#0C2A33]">
+              <Heart className="mx-auto mb-4 text-azul-100" size={48} />
+              <h1 className="text-2xl md:text-1xl font-bold mb-4 text-azul-100">
+                Empatia
+              </h1>
             </div>
-
-            <div className="space-y-4 text-preto-200 leading-relaxed">
-              <p>
-                Sou desenvolvedor apaixonado por criar experiências que conectam pessoas
-                e tecnologia de forma simples e verdadeira.
-              </p>
-              <p>
-                Código é ferramenta — o valor está nas histórias e conexões criadas.
-              </p>
-              <p>
-                Fora do código: música, boas conversas e novas ideias.
-              </p>
+            <div className="w-fit h-fit mx-auto text-center border-azul-100 border rounded-2xl p-8 bg-azul-300 shadow-lg drop-shadow-[0_0_20px_#0C2A33]">
+              <Users className="mx-auto mb-4 text-azul-100" size={48} />
+              <h1 className="text-2xl md:text-1xl font-bold mb-4 text-azul-100">
+                Amizade
+              </h1>
+            </div>
+            <div className="w-fit h-fit mx-auto text-center border-azul-200 border rounded-2xl p-8 bg-azul-300 shadow-lg drop-shadow-[0_0_20px_#0C2A33]">
+              <Code className="mx-auto mb-4 text-azul-100" size={48} />
+              <h1 className="text-2xl md:text-1xl font-bold mb-4 text-azul-100">
+                Respeito
+              </h1>
+            </div>
+            <div className="w-fit h-fit mx-auto text-center border-azul-200 border rounded-2xl p-8 bg-azul-300 shadow-lg drop-shadow-[0_0_20px_#0C2A33]">
+              <Music className="mx-auto mb-4 text-azul-100" size={48} />
+              <h1 className="text-2xl md:text-1xl font-bold mb-4 text-azul-100">
+                Comunicação
+              </h1>
             </div>
           </div>
-
-          {/* COMO TRABALHO */}
-          <div
-            id="como-trabalho"
-            className="scroll-mt-20 rounded-xl p-4 bg-verde-300 shadow-lg drop-shadow-[0_0_20px_#040F0F]"
-          >
-            <h2 className="text-2xl font-bold mb-6 pb-2 text-verde-100 border-b-2 border-verde-200">
-              Como trabalho
-            </h2>
-
-            <div className="rounded-2xl aspect-video mb-6 overflow-hidden border-2 border-verde-100 bg-verde-200">
-              <img
-                src="/collaborative-team-workspace.jpg"
-                alt="Trabalho em equipe"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            <div className="space-y-4 text-preto-200 leading-relaxed">
-              <p>
-                Valorizo <strong className="text-verde-100">colaboração</strong>.
-              </p>
-              <p>
-                Escuta ativa e <strong className="text-verde-100">respeito mútuo</strong>.
-              </p>
-              <p>
-                Processos claros e feedbacks construtivos.
-              </p>
-            </div>
-          </div>
-
-          {/* COMO COMECEI */}
-          <div
-            id="como-comecei"
-            className="scroll-mt-20 rounded-xl p-4 bg-amarelo-300 shadow-lg drop-shadow-[0_0_20px_#463400]"
-          >
-            <h2 className="text-2xl font-bold mb-6 pb-2 text-amarelo-100 border-b-2 border-amarelo-200">
-              Como comecei
-            </h2>
-
-            <div className="rounded-2xl aspect-video mb-6 overflow-hidden border-2 border-amarelo-100 bg-amarelo-200">
-              <img
-                src="/coding-journey-learning-computer.jpg"
-                alt="Minha jornada"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            <div className="space-y-4 text-preto-200 leading-relaxed">
-              <p>
-                Tudo começou com curiosidade.
-              </p>
-              <p>
-                Programar é <strong className="text-amarelo-100">impactar pessoas</strong>.
-              </p>
-              <p>
-                Cada projeto é aprendizado.
-              </p>
-            </div>
-          </div>
-
         </div>
-      </section>
+      </header>
 
-      <div className="flex justify-center items-center gap-10">
-        <Card cards={cards} />
-        <Card cards={cards2} />
-        <Card cards={cards3} />
+      <div className="flex flex-col">
+        <h1 className="text-3xl text-start px-6 mb-5 font-semibold text-amarelo-100">Meus Projetos</h1>
+          <CardSlim cardSlim={cardSlim} />
       </div>
 
       <BtContato />
