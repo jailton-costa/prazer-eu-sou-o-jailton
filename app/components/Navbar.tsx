@@ -14,15 +14,15 @@ export default function Navbar() {
               Sobre este projeto
             </Link>
             <div className="h-7 border border-verde-100"></div>
-            <Link href="#como-trabalho">
+            <Link href="/#trabalho" > 
               Como trabalho
             </Link>
             <div className="h-7 border border-verde-100"></div>
-            <Link href="#como-comecei">
-              Como comecei
+            <Link href="/#contato">
+              conversar comigo
             </Link>
             <div className="h-7 border border-verde-100"></div>
-            <Link href="#valores">
+            <Link href="/#valores">
               Meus valores
             </Link>
           </div>

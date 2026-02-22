@@ -71,7 +71,7 @@
 
 :root {
 
-  --background: #171717;
+  --background: black;
   --secondary-background: #FEFEFF;
   --background-input: #ECFEFF;
   --secondary: #13BFD7;
@@ -92,9 +92,12 @@
 
 .btNormal {
   @apply bg-verde-300 text-verde-100 border-verde-100 border-2 font-semibold hover:shadow-xl hover:text-xl hover:drop-shadow-[0_0_10px_#0FF25E] transition-all rounded-2xl p-2;
-}
-.btN2 {
-  @apply  inline-flex px-8 py-4 rounded-2xl font-medium bg-verde-200 text-foreground transition-all shadow-lg hover:drop-shadow-[0_0_10px_#099B3C] hover:opacity-90;
+}.btN2 {
+  @apply  inline-flex px-8 py-4 rounded-2xl font-medium border-2 border-verde-100 bg-verde-300 hover:text-lg text-verde-100 transition-all shadow-lg  hover:drop-shadow-[0_0_10px_#099B3C] hover:opacity-90;
+}.btAmarelo {
+  @apply  inline-flex px-8 py-4 rounded-2xl font-medium border-2 border-amarelo-100 bg-amarelo-300 hover:text-lg text-amarelo-100 transition-all shadow-lg  hover:drop-shadow-[0_0_10px_#F5B700] hover:opacity-90;
+}.btAzul {
+  @apply  inline-flex px-8 py-4 rounded-2xl font-medium border-2 border-azul-100 bg-azul-300 hover:text-lg text-azul-100 transition-all shadow-lg  hover:drop-shadow-[0_0_10px_#35ADDC] hover:opacity-90;
 }
   
 @layer base {

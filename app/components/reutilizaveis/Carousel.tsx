@@ -37,7 +37,7 @@ export default function EventCarousel({ eventos }: Props) {
             >
                 <ChevronLeft />
             </button>
-            <div className="flex flex-col md:flex-row items-center overflow-hidden rounded-2xl shadow-2xl w-300">
+            <div className="flex flex-col md:flex-row items-center overflow-hidden rounded-2xl shadow-2xl w-306">
 
                 {/* IMAGEM */}
                 <div className="md:w-3/5 h-[260px] md:h-[320px] border border-verde-100 rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none overflow-hidden relative">
