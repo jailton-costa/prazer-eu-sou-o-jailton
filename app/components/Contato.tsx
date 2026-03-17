@@ -1,5 +1,6 @@
 'use client'
 
+import { MessageCircleQuestion } from "lucide-react"
 import { useState } from "react"
 
 export default function  Contato() {
@@ -22,10 +23,10 @@ export default function  Contato() {
   }
 
   return (
-    <section id="contato" className="container max-w-xl mx-auto text-center border border-verde-100 rounded-2xl p-8 md:p-10 bg-verde-300 shadow-lg hover:drop-shadow-[0_0_20px_#099B3C] transition-all">
+    <section id="contato" className="container max-w-xl mx-auto text-center border border-verde-100 rounded-2xl p-8 md:p-10 bg-verde-300 shadow-lg group hover:drop-shadow-[0_0_20px_#099B3C] transition-all">
 
-      <h2 className="text-2xl md:text-3xl font-bold mb-4 text-verde-100 drop-shadow-[0_0_5px_#099B3C]">
-        Vamos conversar?
+      <h2 className="text-2xl md:text-3xl font-bold mb-4 text-verde-100 group-hover:drop-shadow-[0_0_3px_#099B3C] flex justify-center items-center gap-2">
+        Vamos conversar <MessageCircleQuestion className="w-7 h-7"/>
       </h2>
 
       <p className="mb-8 leading-relaxed text-azul-100 opacity-90">

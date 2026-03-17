@@ -4,7 +4,6 @@ import { Music, Users, Heart, Code, CardSim, User, Accessibility, PartyPopper } 
 import Navbar from "./components/Navbar"
 import Rodape from "./components/Rodape"
 import Card from "./components/reutilizaveis/Card"
-import BtContato from "./components/Contato"
 import Carousel from "./components/reutilizaveis/Carousel"
 import CardSlim from "./components/reutilizaveis/CardSlim"
 import Tags from "./components/reutilizaveis/Tags"
@@ -12,117 +11,31 @@ import Resumo from "./components/Resumo"
 import Contato from "./components/Contato"
 
 export default function page() {
-  const cards = [
-    {
-      titulo: "Música",
-      descricao: "A música inspira criatividade e energia.",
-      imagem: "/devs.jpg",
-      corTitulo: "text-verde-100",
-      corDescricao: "text-verde-100",
-      corBg: "bg-verde-300",
-      border: "border-verde-100",
-      shadow: " hover:drop-shadow-[0_0_10px_#F7B500] transition-all",
-      link: "/pgTestes"
-    }, {
-      titulo: "Música",
-      descricao: "A música inspira criatividade e energia.",
-      imagem: "/devs.jpg",
-      corTitulo: "text-verde-100",
-      corDescricao: "text-verde-100",
-      corBg: "bg-verde-300",
-      border: "border-verde-100",
-      shadow: " hover:drop-shadow-[0_0_10px_#F7B500] transition-all",
-      link: "/pgTestes"
-    }, {
-      titulo: "Música",
-      descricao: "A música inspira criatividade e energia.",
-      imagem: "/devs.jpg",
-      corTitulo: "text-verde-100",
-      corDescricao: "text-verde-100",
-      corBg: "bg-verde-300",
-      border: "border-verde-100",
-      shadow: " hover:drop-shadow-[0_0_10px_#F7B500] transition-all",
-      link: "/pgTestes"
-    }, {
-      titulo: "Música",
-      descricao: "A música inspira criatividade e energia.",
-      imagem: "/devs.jpg",
-      corTitulo: "text-verde-100",
-      corDescricao: "text-verde-100",
-      corBg: "bg-verde-300",
-      border: "border-verde-100",
-      shadow: " hover:drop-shadow-[0_0_10px_#F7B500] transition-all",
-      link: "/pgTestes"
-    }
-  ]
   const eventos = [
     {
-      titulo: "Arnold 2026 | Feira",
-      subtitulo: "Arnold 2026 | Feira",
-      data: "24 a 26 de abril",
-      local: "Expo Center Norte - SP",
-      imagem: "/devs.jpg",
-      link: "/pgTestes"
+      titulo: "Inklua Ticket",
+      subtitulo: "A InkluaTicket é uma plataforma de venda de ingressos online que facilita, gestão e compra de ingressos para eventos, oferecendo uma experiência, segura e acessível para organizadores e participantes.",
+      data: "Finalizado em 09/12/2025",
+      local: "santa catarina - sc",
+      imagem: "/colaboracao/inkluaTicket/inkluaTicket.png",
+      link: "/projeto/inkluaTicket"
     },
     {
-      titulo: "Tech Summit 2026",
-      subtitulo: "Inovação e tecnologia",
-      data: "10 de maio",
-      local: "São Paulo - SP",
-      imagem: "/dormir.png",
-    }, {
-      titulo: "Hackathon 2026",
-      subtitulo: "Desafios de programação",
-      data: "15 a 17 de junho",
-      local: "Online",
-      imagem: "/codigo.png",
-    }, {
-      titulo: "Conferência de IA 2026",
-      subtitulo: "Inteligência Artificial e Futuro",
-      data: "5 de julho",
-      local: "Rio de Janeiro - RJ",
-      imagem: "/isso.png",
+      titulo: "Island Tainho",
+      subtitulo: "O Pet Tainho é uma plataforma que centraliza rotas, dicas e informações para ajudar turistas a se locomoverem em Florianópolis de forma mais prática, rápida e segura.",
+      data: "Finalizado em 04/12/2025",
+      local: "florianopolis - sc",
+      imagem: "/colaboracao/islandTainho/island-home.png",
+      link: "/projeto/islandTainho"
     },
-  ]
-
-  const cardSlim = [
     {
-      titulo: "Música",
-      descricao: "A música inspira criatividade e energia.",
-      imagem: "/devs.jpg",
-      corTitulo: "text-amarelo-100",
-      corDescricao: "text-amarelo-100",
-      corBg: "bg-amarelo-300",
-      border: "border-amarelo-100",
-      shadow: " hover:drop-shadow-[0_0_10px_#F7B500] transition-all"
-    }, {
-      titulo: "Música",
-      descricao: "A música inspira criatividade e energia.",
-      imagem: "/codigo.png",
-      corTitulo: "text-amarelo-100",
-      corDescricao: "text-amarelo-100",
-      corBg: "bg-amarelo-300",
-      border: "border-amarelo-100",
-      shadow: " hover:drop-shadow-[0_0_10px_#F7B500] transition-all"
-    }, {
-      titulo: "Música",
-      descricao: "A música inspira criatividade e energia.",
-      imagem: "/isso.png",
-      corTitulo: "text-amarelo-100",
-      corDescricao: "text-amarelo-100",
-      corBg: "bg-amarelo-300",
-      border: "border-amarelo-100",
-      shadow: " hover:drop-shadow-[0_0_10px_#F7B500] transition-all"
-    }, {
-      imagem: "/dormir.png",
-      titulo: "Música",
-      descricao: "A música inspira criatividade e energia.",
-      corTitulo: "text-amarelo-100",
-      corDescricao: "text-amarelo-100",
-      corBg: "bg-amarelo-300",
-      border: "border-amarelo-100",
-      shadow: " hover:drop-shadow-[0_0_10px_#F7B500] transition-all"
-    }
+      titulo: "DevChat Cli",
+      subtitulo: "O DevChat CLI é um chat em tempo real para desenvolvedores que funciona diretamente no terminal, permitindo conversar com outros devs sem sair do ambiente de código",
+      data: "Iniciado em 10/2/2026",
+      local: "santa catarina - sc",
+      imagem: "/colaboracao/DevChatCLI/DevChatCLI02.png",
+      link: "/projeto/devChatCLI"
+    },
   ]
 
   const tags = [
@@ -164,8 +77,55 @@ export default function page() {
     }
   ]
 
+  const cards = [
+    {
+      titulo: "InkluaTicket",
+      descricao: "A InkluaTicket é uma plataforma de venda de ingressos online que facilita, gestão e compra de ingressos para eventos, oferecendo uma experiência, segura e acessível para organizadores e participantes.",
+      imagem: "/colaboracao/inkluaTicket/inkluaTicket.png",
+      corTitulo: "text-roxo-inklua-100",
+      corDescricao: "text-roxo-inklua-100",
+      corBg: "bg-gray-900",
+      border: "border-roxo-inklua-200",
+      shadow: " hover:drop-shadow-[0_0_10px_#574cd5] transition-all",
+      link: "/projeto/inkluaTicket"
+    }, {
+      titulo: "DevChatCLI",
+      descricao: "o DevChat CLI é um chat em tempo real para desenvolvedores que funciona diretamente no terminal, permitindo conversar com outros devs sem sair do ambiente de código",
+      imagem: "/colaboracao/DevChatCLI/devChatCLI01.png",
+      corTitulo: "text-devChat-100",
+      corDescricao: "text-devChat-100",
+      corBg: "bg-devChat-300",
+      border: "border-devChat-100",
+      shadow: " hover:drop-shadow-[0_0_10px_#ffffff] transition-all",
+      link: "/projeto/devChatCLI"
+    }, {
+      titulo: "islandTainho",
+      descricao: "O Pet Tainho é uma plataforma que centraliza rotas, dicas e informações para ajudar turistas a se locomoverem em Florianópolis de forma mais prática, rápida e segura.",
+      imagem: "/colaboracao/islandTainho/island-home.png",
+      corTitulo: "text-island-azul-100",
+      corDescricao: "text-island-azul-100",
+      corBg: "bg-island-azul-300",
+      border: "border-island-azul-100",
+      shadow: " hover:drop-shadow-[0_0_10px_#053345] transition-all",
+      link: "/projeto/islandTainho"
+    }, 
+  ]
+
+  const cardSlim = [
+    {
+      titulo: "My-game",
+      descricao: "Edgewake é um jogo ambientado em um mundo colapsado entre dimensões, enfrenta combates táticos inspirados em Undertale e toma decisões que influenciam o destino entre caos e esperança.",
+      imagem: "/pessoal/my-game/myGame.png",
+      corTitulo: "text-gray-100",
+      corDescricao: "text-gray-400",
+      corBg: "bg-gray-800",
+      border: "border-gray-100",
+      shadow: " hover:drop-shadow-[0_0_10px_#ffffff] transition-all"
+    },
+  ]
+
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col">
+    <div className="min-h-screen bg-background text-foreground font-montserrat flex flex-col">
       <Navbar />
       <div className="flex flex-col gap-25 mb-20">
         <Resumo />
@@ -184,6 +144,10 @@ export default function page() {
           <Tags tags={tags} />
         </div>
 
+        <div id="contato" className="scroll-smooth scroll-mt-20">
+          <Contato />
+        </div>
+
         <div className="flex flex-col scroll-smooth scroll-mt-20" id="trabalho">
           <h1 className="text-3xl text-start px-6 mb-5 font-semibold text-verde-100">
             Projetos em Colaboração
@@ -191,12 +155,8 @@ export default function page() {
           <Card cards={cards} />
         </div>
 
-        <div id="contato" className="scroll-smooth scroll-mt-20">
-          <Contato />
-        </div>
-
-        <div className="flex flex-col scroll-smooth scroll-mt-20" id="trabalho">
-          <h1 className="text-3xl text-start px-6 mb-5 font-semibold text-amarelo-100">
+        <div className="flex flex-col scroll-smooth scroll-mt-20" id="meusProjetos">
+          <h1 className="text-3xl text-start px-6 mb-5 font-semibold text-verde-100">
             Meus Projetos
           </h1>
           <CardSlim cardSlim={cardSlim} />

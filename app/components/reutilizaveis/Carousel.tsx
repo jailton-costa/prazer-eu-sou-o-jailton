@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -29,18 +29,25 @@ export default function EventCarousel({ eventos }: Props) {
 
     const evento = eventos[index]
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((i) => (i === eventos.length - 1 ? 0 : i + 1));
+        }, 10000);
+
+        return () => clearInterval(interval);
+    }, [eventos.length]);
+
     return (
         <div className="relative w-full max-w-9xl mx-auto flex items-center justify-center gap-6">
             <button
                 onClick={prev}
-                className="relative btNormal rounded-full p-2 h-30 "
+                className="relative btNormal rounded-full p-2 h-20 hover:h-26 "
             >
                 <ChevronLeft />
             </button>
-            <div className="flex flex-col md:flex-row items-center overflow-hidden rounded-2xl shadow-2xl w-306">
+            <div className="flex flex-col md:flex-row items-center border-verde-100 border overflow-hidden rounded-2xl shadow-2xl w-306">
 
-                {/* IMAGEM */}
-                <div className="md:w-3/5 h-[260px] md:h-[320px] border border-verde-100 rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none overflow-hidden relative">
+                <div className="md:w-3/5 md:h-[320px] rounded-2xl border border-verde-100 overflow-hidden relative">
                     <Image
                         src={evento.imagem}
                         alt={evento.titulo}
@@ -50,8 +57,7 @@ export default function EventCarousel({ eventos }: Props) {
                     />
                 </div>
 
-                {/* TEXTO */}
-                <div className="md:w-2/5 h-[260px] md:h-[320px] bg-verde-300 text-verde-100 border border-verde-100 rounded-b-2xl md:rounded-r-2xl md:rounded-bl-none p-8 flex flex-col justify-between">
+                <div className="md:w-2/5 md:h-[320px] bg-verde-300 text-verde-200 rounded-b-2xl p-6 flex flex-col justify-between">
 
                     <div className="space-y-2">
                         <h1 className="text-2xl md:text-3xl font-bold">
@@ -59,9 +65,12 @@ export default function EventCarousel({ eventos }: Props) {
                         </h1>
 
                         <h2 className="opacity-80 font-semibold">
-                            {evento.subtitulo} | {evento.data}
+                            {evento.subtitulo}
                         </h2>
 
+                        <p className="opacity-80">
+                            {evento.data}
+                        </p>
                         <p className="opacity-80">
                             {evento.local}
                         </p>
@@ -70,13 +79,12 @@ export default function EventCarousel({ eventos }: Props) {
                     <Link href={`${evento.link}`} className="btNormal text-center w-full md:w-64 h-12">
                         Ver Detalhes
                     </Link>
-
                 </div>
             </div>
 
             <button
                 onClick={next}
-                className="relative btNormal rounded-full p-2 h-30"
+                className="relative btNormal rounded-full p-2 h-20 hover:h-26"
             >
                 <ChevronRight />
             </button>

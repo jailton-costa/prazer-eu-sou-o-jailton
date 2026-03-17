@@ -47,7 +47,7 @@
   --background: #171717;
   --foreground: #ffffff;
 
-  --font-inter: "Inter", system-ui, sans-serif;
+  --font-montserrat: "Montserrat", system-ui, sans-serif;
 
   --color-verde-100: #0FF25E;
   --color-verde-200: #099B3C;
@@ -61,45 +61,73 @@
   --color-amarelo-200: #9D7600;
   --color-amarelo-300: #463400;
 
-  --color-preto-100: #E1E1E1;
-  --color-preto-200: #898989;
-  --color-preto-300: #343434; 
-
   --color-quatro: var(--quatro);
 
+
+  /* ---projetos colaborativos--- */
+  /* --InkluaTicket-- */
+  --color-roxo-inklua-100: #f0f3fd;
+  --color-roxo-inklua-200: #574cd5;
+  --color-roxo-inklua-300: #231f47;
+
+  /* -- devChatCLI -- */
+  --color-devChat-100: #FFFFFF;
+  --color-devChat-200: #525252;
+  --color-devChat-300: #171717;
+
+    /* -- islandTainho -- */
+  --color-island-azul-100: #ECFEFF;
+  --color-island-azul-200: #104E64;
+  --color-island-azul-300: #053345;
+
 }
-
 :root {
-
-  --background: black;
+  --background: #0D1118;
   --secondary-background: #FEFEFF;
   --background-input: #ECFEFF;
   --secondary: #13BFD7;
   --tertiary: #1F9FC0;
   --quatro: #0F4A5C;
-
-
 }
+
 @keyframes fade-in {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.animate-fade-in {
+.animate {
   animation: fade-in 0.3s ease-out;
   animation-fill-mode: forwards;
 }
 
+/* botoes reutilizaveis */
 .btNormal {
   @apply bg-verde-300 text-verde-100 border-verde-100 border-2 font-semibold hover:shadow-xl hover:text-xl hover:drop-shadow-[0_0_10px_#0FF25E] transition-all rounded-2xl p-2;
-}.btN2 {
-  @apply  inline-flex px-8 py-4 rounded-2xl font-medium border-2 border-verde-100 bg-verde-300 hover:text-lg text-verde-100 transition-all shadow-lg  hover:drop-shadow-[0_0_10px_#099B3C] hover:opacity-90;
-}.btAmarelo {
-  @apply  inline-flex px-8 py-4 rounded-2xl font-medium border-2 border-amarelo-100 bg-amarelo-300 hover:text-lg text-amarelo-100 transition-all shadow-lg  hover:drop-shadow-[0_0_10px_#F5B700] hover:opacity-90;
-}.btAzul {
-  @apply  inline-flex px-8 py-4 rounded-2xl font-medium border-2 border-azul-100 bg-azul-300 hover:text-lg text-azul-100 transition-all shadow-lg  hover:drop-shadow-[0_0_10px_#35ADDC] hover:opacity-90;
 }
-  
+
+.btN2 {
+  @apply px-8 py-4 rounded-2xl font-medium border-2 border-verde-100 bg-verde-300 hover:text-lg text-verde-100 transition-all shadow-lg hover:drop-shadow-[0_0_10px_#099B3C] hover:opacity-90;
+}
+
+.btAmarelo {
+  @apply px-8 py-4 rounded-2xl font-medium border-2 border-amarelo-100 bg-amarelo-300 hover:text-lg text-amarelo-100 transition-all shadow-lg hover:drop-shadow-[0_0_10px_#F5B700] hover:opacity-90;
+}
+
+.btAzul {
+  @apply px-8 py-4 rounded-2xl font-medium border-2 border-azul-100 bg-azul-300 hover:text-lg text-azul-100 transition-all shadow-lg hover:drop-shadow-[0_0_10px_#35ADDC] hover:opacity-90;
+}
+
+.btgithub {
+  @apply px-8 py-4 rounded-2xl font-medium border-2 border-white bg-black hover:text-lg text-white transition-all shadow-lg hover:drop-shadow-[0_0_10px_#ffffff] hover:opacity-90;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
