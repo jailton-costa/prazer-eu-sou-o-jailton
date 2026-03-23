@@ -60,7 +60,7 @@ const projetos: Record<string, Projeto> = {
     desenvolvimento: "Em desenvolvimento, mais ja da para usar.",
     Integrantes: "Samuel bordignon, Eduardo santos, Jailton costa.",
     description: "O DevChat CLI é um chat em tempo real feito para desenvolvedores, rodando diretamente no terminal.  A ideia é simples:  conversar com outros devs sem sair do ambiente de código.  Nada de abrir Discord, navegador ou apps pesados — só o terminal.",
-    minhaDescricao: "Desenvolver o DevChat CLI tem sido uma experiência incrível, em bora o projeto ainda esteja 100% finalizado, ja e posivel usar e testar.",
+    minhaDescricao: "Desenvolver o DevChat CLI tem sido uma experiência incrível, em bora o projeto ainda não esteja 100% finalizado, ja e posivel usar e testar.",
     eventos: [
       { imagem: "/colaboracao/DevChatCLI/DevChatCLI01.png", corBorder: "border-white", corBg: "bg-black", corText: "border-white", corShadow: "hover:drop-shadow-[0_0_10px_#ffffff] hover:opacity-90" },
       { imagem: "/colaboracao/DevChatCLI/DevChatCLI02.png", corBorder: "border-white", corBg: "bg-black", corText: "border-white", corShadow: "hover:drop-shadow-[0_0_10px_#ffffff] hover:opacity-90" },
@@ -97,6 +97,27 @@ const projetos: Record<string, Projeto> = {
     shadowCor: "hover:drop-shadow-[0_0_10px_#053345] hover:opacity-90",
     linkProjeto: "https://github.com/DarlanHildebrando/frontend-hackathon/tree/teste-login",
   },
+  myGame: {
+    title: "MyGame",
+    location: "Santa catarina - brasil",
+    desenvolvimento: "Desenvolvimento parado no momento.",
+    Integrantes: "Jailton costa.",
+    description: "MyGame é um jogo de plataforma 2D onde os jogadores controlam um personagem em uma jornada para resgatar seu amigo sequestrado. O jogo apresenta níveis desafiadores, inimigos variados e power-ups para ajudar na missão. Com gráficos pixel art e uma trilha sonora envolvente, MyGame oferece uma experiência divertida e nostálgica para os fãs de jogos de plataforma.",
+    minhaDescricao: "",
+    eventos: [
+      { imagem: "/pessoal/my-game/myGame-home.png", corBorder: "border-green-700", corBg: "bg-gray-900", corText: "border-green-700", corShadow: "hover:drop-shadow-[0_0_10px_#388E3C] hover:opacity-90" },
+      { imagem: "/pessoal/my-game/myGame.png", corBorder: "border-green-700", corBg: "bg-gray-900", corText: "border-green-700", corShadow: "hover:drop-shadow-[0_0_10px_#388E3C] hover:opacity-90" },
+    ],
+    dataInicio: "Inicio: 11, Jul, 2025",
+    dataFim: " Fim: 30, Jul, 2025",
+    bgCor: "bg-gray-900",
+    bgMinCor: "bg-gray-800",
+    textCor: "text-green-700",
+    borderCor: "border-green-700 border-2",
+    shadowCor: "hover:drop-shadow-[0_0_10px_#053345] hover:opacity-90",
+    linkProjeto: "https://github.com/DarlanHildebrando/frontend-hackathon/tree/teste-login",
+  },
+
 }
 
 export default async function ProjetoPage({

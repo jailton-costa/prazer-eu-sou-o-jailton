@@ -7,7 +7,7 @@ export default function CardSlim({ cardSlim }: { cardSlim: any[] }) {
     return (
         <div className="container mx-auto px-15 grid grid-cols-1 md:grid-cols-2 gap-10">
             {cardSlim.map((cardSlim, index) => (
-                <div key={index} className={`flex items-center justify-start rounded-2xl border-l-5 hover:${cardSlim.shadow} ${cardSlim.corBg} ${cardSlim.border} mt-2`}>
+                <Link href={cardSlim.links} key={index} className={`flex items-center justify-start rounded-2xl border-l-5 hover:${cardSlim.shadow} ${cardSlim.corBg} ${cardSlim.border} mt-2`}>
                     <Image
                         src={cardSlim.imagem}
                         alt={cardSlim.imagem}
@@ -23,7 +23,7 @@ export default function CardSlim({ cardSlim }: { cardSlim: any[] }) {
                             {cardSlim.descricao}
                         </p>
                     </div>
-                </div>
+                </Link>
             ))}
         </div>
     )

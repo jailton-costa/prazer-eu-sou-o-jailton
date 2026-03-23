@@ -9,6 +9,7 @@ import CardSlim from "./components/reutilizaveis/CardSlim"
 import Tags from "./components/reutilizaveis/Tags"
 import Resumo from "./components/Resumo"
 import Contato from "./components/Contato"
+import { link } from "fs"
 
 export default function page() {
   const eventos = [
@@ -106,7 +107,7 @@ export default function page() {
       corDescricao: "text-island-azul-100",
       corBg: "bg-island-azul-300",
       border: "border-island-azul-100",
-      shadow: " hover:drop-shadow-[0_0_10px_#053345] transition-all",
+      shadow: " hover:drop-shadow-[0_0_15px_#053345] transition-all",
       link: "/projeto/islandTainho"
     }, 
   ]
@@ -116,11 +117,12 @@ export default function page() {
       titulo: "My-game",
       descricao: "Edgewake é um jogo ambientado em um mundo colapsado entre dimensões, enfrenta combates táticos inspirados em Undertale e toma decisões que influenciam o destino entre caos e esperança.",
       imagem: "/pessoal/my-game/myGame.png",
-      corTitulo: "text-gray-100",
-      corDescricao: "text-gray-400",
+      corTitulo: "text-white",
+      corDescricao: "text-green-700",
       corBg: "bg-gray-800",
       border: "border-gray-100",
-      shadow: " hover:drop-shadow-[0_0_10px_#ffffff] transition-all"
+      shadow: " hover:drop-shadow-[0_0_10px_#ffffff] transition-all",
+      links: "/projeto/myGame",
     },
   ]
 
