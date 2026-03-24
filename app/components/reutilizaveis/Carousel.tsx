@@ -52,12 +52,12 @@ export default function EventCarousel({ eventos }: Props) {
                         src={evento.imagem}
                         alt={evento.titulo}
                         width={800}
-                        height={500}
+                        height={800}
                         className="w-full h-full object-top-left "
                     />
                 </div>
 
-                <div className="md:w-2/5 md:h-[320px] bg-verde-300 text-verde-200 rounded-b-2xl p-6 flex flex-col justify-between">
+                <div className="md:w-2/5 md:h-[320px] bg-verde-300 text-verde-100 rounded-b-2xl p-6 flex flex-col justify-between">
 
                     <div className="space-y-2">
                         <h1 className="text-2xl md:text-3xl font-bold">

@@ -18,8 +18,8 @@ export default function Card({ cards }: { cards: any[] }) {
               <Image
                 src={card.imagem}
                 alt={card.alt ?? card.titulo}
-                width={155}
-                height={155}
+                width={500}
+                height={500}
                 className="rounded-md object-top-left w-full h-full"
               />
             </div>

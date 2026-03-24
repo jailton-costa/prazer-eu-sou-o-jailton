@@ -49,8 +49,8 @@ export default function EventCarousel({ eventos }: Props) {
                     <Image
                         src={evento.imagem}
                         alt={evento.imagem}
-                        width={500}
-                        height={500}
+                        width={800}
+                        height={800}
                         className="w-full h-full object-top-left "
                     />
                 </div>

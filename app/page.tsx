@@ -1,6 +1,6 @@
 "use client"
 
-import { Music, Users, Heart, Code, CardSim, User, Accessibility, PartyPopper } from "lucide-react"
+import { Users, Heart, Code, Accessibility, PartyPopper, MessageCircleHeartIcon, UsersIcon, SpotlightIcon, FoldersIcon } from "lucide-react"
 import Navbar from "./components/Navbar"
 import Rodape from "./components/Rodape"
 import Card from "./components/reutilizaveis/Card"
@@ -9,7 +9,6 @@ import CardSlim from "./components/reutilizaveis/CardSlim"
 import Tags from "./components/reutilizaveis/Tags"
 import Resumo from "./components/Resumo"
 import Contato from "./components/Contato"
-import { link } from "fs"
 
 export default function page() {
   const eventos = [
@@ -133,14 +132,16 @@ export default function page() {
         <Resumo />
 
         <div className="flex flex-col">
-          <h1 className="text-3xl text-start px-6 mb-5 font-semibold text-verde-100 ">
+          <h1 className="text-3xl text-start px-6 mb-5 font-semibold text-verde-100 flex items-center gap-2">
+            <SpotlightIcon className="w-9 h-9"/>
             Projetos em Destaque
           </h1>
           <Carousel eventos={eventos} />
         </div>
 
         <div className="flex flex-col scroll-smooth scroll-mt-20" id="valores">
-          <h1 className="text-3xl text-start px-6 mb-5 font-semibold text-azul-100 ">
+          <h1 className="text-3xl text-start px-6 mb-5 font-semibold text-azul-100 flex items-center gap-2">
+            <MessageCircleHeartIcon className="w-9 h-9"/>
             Valores que me definem
           </h1>
           <Tags tags={tags} />
@@ -151,14 +152,16 @@ export default function page() {
         </div>
 
         <div className="flex flex-col scroll-smooth scroll-mt-20" id="trabalho">
-          <h1 className="text-3xl text-start px-6 mb-5 font-semibold text-verde-100">
+          <h1 className="text-3xl text-start flex items-center gap-2 px-6 mb-5 font-semibold text-verde-100">
+            <UsersIcon className="w-9 h-9"/>
             Projetos em Colaboração
           </h1>
           <Card cards={cards} />
         </div>
 
         <div className="flex flex-col scroll-smooth scroll-mt-20" id="meusProjetos">
-          <h1 className="text-3xl text-start px-6 mb-5 font-semibold text-verde-100">
+          <h1 className="text-3xl text-start px-6 mb-5 font-semibold text-verde-100 flex items-center gap-2">
+            <FoldersIcon className="w-9 h-9"/>
             Meus Projetos
           </h1>
           <CardSlim cardSlim={cardSlim} />

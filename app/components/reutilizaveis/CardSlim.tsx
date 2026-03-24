@@ -11,11 +11,11 @@ export default function CardSlim({ cardSlim }: { cardSlim: any[] }) {
                     <Image
                         src={cardSlim.imagem}
                         alt={cardSlim.imagem}
-                        width={100}
-                        height={100}
+                        width={500}
+                        height={500}
                         className="w-50 h-30 p-2 rounded-2xl object-top-left"
                     />
-                    <div className="flex flex-col gap-2 ml-6">
+                    <div className="flex flex-col gap-2 ml-4">
                         <h1 className={`text-xl font-medium ${cardSlim.corTitulo}`}>
                             {cardSlim.titulo}
                         </h1>

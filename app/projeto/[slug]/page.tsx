@@ -51,7 +51,7 @@ const projetos: Record<string, Projeto> = {
     bgMinCor: "bg-gray-800",
     textCor: "text-roxo-inklua-100",
     borderCor: "border-roxo-inklua-200 border-2",
-    shadowCor: "hover:drop-shadow-[0_0_10px_#ffffff] hover:opacity-90",
+    shadowCor: "hover:drop-shadow-[0_0_1px_#ffffff] hover:opacity-90",
     linkProjeto: "https://github.com/InkluaTicket/SA-Senai-InkluaTicket",
   },
   devChatCLI: {
@@ -71,7 +71,7 @@ const projetos: Record<string, Projeto> = {
     bgMinCor: "bg-devChat-300",
     textCor: "text-devChat-100",
     borderCor: "border-devChat-100 border-2",
-    shadowCor: "hover:drop-shadow-[0_0_10px_#ffffff] hover:opacity-90",
+    shadowCor: "hover:drop-shadow-[0_0_1px_#ffffff] hover:opacity-90",
     linkProjeto: "https://github.com/samuel-bordignon/DevChat-CLI",
   },
   islandTainho: {
@@ -94,7 +94,7 @@ const projetos: Record<string, Projeto> = {
     bgMinCor: "bg-island-azul-200",
     textCor: "text-island-azul-100",
     borderCor: "border-island-azul-100 border-2",
-    shadowCor: "hover:drop-shadow-[0_0_10px_#053345] hover:opacity-90",
+    shadowCor: "hover:drop-shadow-[0_0_1px_#ECFEFF] hover:opacity-90",
     linkProjeto: "https://github.com/DarlanHildebrando/frontend-hackathon/tree/teste-login",
   },
   myGame: {
@@ -114,7 +114,7 @@ const projetos: Record<string, Projeto> = {
     bgMinCor: "bg-gray-800",
     textCor: "text-green-700",
     borderCor: "border-green-700 border-2",
-    shadowCor: "hover:drop-shadow-[0_0_10px_#053345] hover:opacity-90",
+    shadowCor: "hover:drop-shadow-[0_0_1px_#053345] hover:opacity-90",
     linkProjeto: "https://github.com/DarlanHildebrando/frontend-hackathon/tree/teste-login",
   },
 

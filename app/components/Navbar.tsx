@@ -20,15 +20,14 @@ export default function Navbar() {
           </Link>
           </div>
 
-          <div className="flex gap-5 text-ms font-semibold text-verde-100 flex-wrap ">
-            <Link href="/sobreProjeto" className="flex gap-1 hover:drop-shadow-[0_0_5px_#0FF25E] hover:border-b-2 pl-1 transition-all">
-              <FileQuestionMark/>Sobre este projeto
+          <div className="flex justify-center items-center gap-3 text-ms font-semibold text-verde-100 ">
+            <Link href="/sobreProjeto" className="flex gap-1 hover:drop-shadow-[0_0_5px_#0FF25E] hover:border-b-2 p-2 transition-all">
+              <FileQuestionMark/>Sobre Projeto
             </Link>
             <div className="h-7 border border-verde-100"></div>
-            <Link href="/#meusProjetos" className="flex gap-1 hover:drop-shadow-[0_0_5px_#0FF25E] hover:border-b-2 pl-1 transition-all">
+            <Link href="/#meusProjetos" className="flex gap-1 hover:drop-shadow-[0_0_5px_#0FF25E] hover:border-b-2 p-2 transition-all">
               <Folders/>Meus Projetos
             </Link>
-            
           </div>
         </div>
       </div>
