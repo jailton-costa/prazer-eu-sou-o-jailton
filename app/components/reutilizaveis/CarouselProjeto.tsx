@@ -37,28 +37,29 @@ export default function EventCarousel({ eventos }: Props) {
     }, [eventos.length]);
 
     return (
-        <div className="relative w-full max-w-9xl mx-auto flex items-center justify-center gap-6">
+        <div className="relative w-full max-w-9xl mx-auto flex items-center justify-center md:gap-6">
             <button
                 onClick={prev}
-                className={`relative ${evento.corBg} ${evento.corText} ${evento.corBorder} ${evento.corShadow} transition-all border-2 rounded-full p-2 h-20 hover:h-26 `}
+                className={`relative ${evento.corBg} ${evento.corText} ${evento.corBorder} ${evento.corShadow} transition-all border-2 rounded-full p-2 h-fit md:h-20 hover:h-26`}
             >
                 <ChevronLeft />
             </button>
-            <div className={`flex flex-col md:flex-row items-center overflow-hidden ${evento.corBorder} rounded-2xl shadow-2xl w-275    `}>
-                <div className={`md:w-5/5 h-90 border-2 ${evento.corBorder} rounded-2xl overflow-hidden relative`}>
+            <div className={`flex items-center overflow-hidden ${evento.corBorder} rounded-2xl shadow-2xl w-275  `}>
+                <div className={`md:w-5/5 w-2/2 h-50 md:h-90 border-2 ${evento.corBorder} rounded-2xl overflow-hidden relative`}>
                     <Image
                         src={evento.imagem}
                         alt={evento.imagem}
                         width={800}
                         height={800}
-                        className="w-full h-full object-top-left "
+                        quality={90}
+                        className="w-full h-full object-center "
                     />
                 </div>
             </div>
 
             <button
                 onClick={next}
-                className={`relative ${evento.corBg} ${evento.corText} ${evento.corBorder} ${evento.corShadow} transition-all border-2 rounded-full p-2 h-20 hover:h-26`}
+                className={`relative ${evento.corBg} ${evento.corText} ${evento.corBorder} ${evento.corShadow} transition-all border-2 rounded-full p-2 h-fit md:h-20 hover:h-26`}
             >
                 <ChevronRight />
             </button>

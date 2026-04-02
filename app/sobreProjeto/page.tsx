@@ -12,6 +12,18 @@ export default function Page() {
         <section id="sobre" className="container mx-auto px-6 py-16">
           <div className="max-w-3xl mx-auto">
 
+            {/* Logo */}
+            <div className="flex justify-center mb-10">
+              <Image
+                src="/JailtonLogoGrande.png"
+                alt="Logo do projeto: Prazer, eu sou o Jailton"
+                width={600}
+                height={500}
+                priority
+                className="rounded-2xl border border-azul-300 shadow-xl max-h-[280px] w-auto"
+              />
+            </div>
+
             {/* Título */}
             <header className="text-center mb-10">
               <h1 className="text-3xl md:text-4xl font-bold flex items-center justify-center gap-3 text-azul-100 drop-shadow-[0_0_10px_#0C2A33]">
@@ -19,18 +31,6 @@ export default function Page() {
                 <CircleQuestionMark className="h-7 w-7" />
               </h1>
             </header>
-
-            {/* Logo */}
-            <div className="flex justify-center mb-10">
-              <Image
-                src="/JailtonLogoGrande.png"
-                alt="Logo do projeto Prazer, eu sou o Jailton"
-                width={600}
-                height={500}
-                priority
-                className="rounded-2xl border border-azul-300 shadow-xl max-h-[280px] w-auto"
-              />
-            </div>
 
             {/* Conteúdo */}
             <div className="space-y-6 text-preto-200 leading-relaxed text-base md:text-lg">

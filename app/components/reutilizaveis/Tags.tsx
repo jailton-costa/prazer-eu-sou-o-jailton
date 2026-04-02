@@ -3,14 +3,14 @@ import { Music } from "lucide-react"
 
 export default function Tags({ tags }: { tags: any[] }) {
   return (
-    <header className="container mx-auto flex flex-col w-11/12 mt-2">
-        <div className="flex gap-30 flex-wrap">
+    <header className="container mx-auto w-fit mt-2">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-10 md:gap-12">
           {tags.map((tags, index) => {
             const Icon = tags.icon
             return (
               <div
                 key={index}
-                className={`w-fit h-32 flex flex-col justify-center items-center border rounded-4xl p-8 shadow-lg ${tags.corBg} ${tags.border} ${tags.shadow}`}
+                className={`w-47 h-30 flex flex-col justify-center items-center border rounded-4xl p-5 shadow-lg ${tags.corBg} ${tags.border} ${tags.shadow}`}
               >
                 <Icon className={`mx-auto ${tags.corTitulo}`} size={40} />
 

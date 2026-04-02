@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Card({ cards }: { cards: any[] }) {
   return (
-    <div className="container mx-auto px-15 grid grid-cols-4 md:grid-cols-4 gap-10">
+    <div className="container mx-auto px-15 grid grid-cols-1 md:grid-cols-4 gap-10">
 
       {cards.map((card, index) => (
         <Link key={index} href={card.link}>

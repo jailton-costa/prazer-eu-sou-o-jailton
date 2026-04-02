@@ -47,17 +47,18 @@ export default function EventCarousel({ eventos }: Props) {
             </button>
             <div className="flex flex-col md:flex-row items-center border-verde-100 border overflow-hidden rounded-2xl shadow-2xl w-306">
 
-                <div className="md:w-3/5 md:h-[320px] rounded-2xl border border-verde-100 overflow-hidden relative">
+                <div className="md:w-5/5 w-2/2 h-50 md:h-90 rounded-2xl border border-verde-100 overflow-hidden relative">
                     <Image
                         src={evento.imagem}
                         alt={evento.titulo}
                         width={800}
                         height={800}
-                        className="w-full h-full object-top-left "
+                        quality={90}
+                        className="w-full h-full object-center "
                     />
                 </div>
 
-                <div className="md:w-2/5 md:h-[320px] bg-verde-300 text-verde-100 rounded-b-2xl p-6 flex flex-col justify-between">
+                <div className="md:w-2/4 md:h-[320px] bg-verde-300 text-verde-100 rounded-b-2xl p-2 flex flex-col justify-between">
 
                     <div className="space-y-2">
                         <h1 className="text-2xl md:text-3xl font-bold">

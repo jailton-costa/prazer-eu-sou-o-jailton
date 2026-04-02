@@ -234,7 +234,7 @@ export default async function ProjetoPage({
           </div>
 
           {/* SOBRE */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <section className={`${projeto.bgMinCor} p-4 rounded-2xl`}>
               <h3 className="flex items-center gap-2 border-b text-xl font-semibold mb-3">
                 <Search /> Sobre o projeto
