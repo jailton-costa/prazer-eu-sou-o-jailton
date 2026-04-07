@@ -1,39 +1,138 @@
 @import "tailwindcss";
 
-:root {
-    --background: #ffffff;
-  --foreground: #171717;
-  --font-inter: "Inter", system-ui, sans-serif;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-family: var(--font-inter);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-tertiary: var(--tertiary);
+  --color-background-input: var(--background-input);
+  --color-secondary-background: var(--secondary-background);
 
-  --verde-100: #0FF25E;
-  --verde-200: #099B3C;
-  --verde-300: #040F0F;
-  --azul-100: #35ADDC;
-  --azul-200: #206784;
-  --azul-300: #0C2A33;
-  --amarelo-100: #F5B700;
-  --amarelo-200: #9D7600;
-  --amarelo-300: #463400;
-  --preto-100: #E1E1E1;
-  --preto-200: #898989;
-  --preto-300: #343434;
+  --color-verde-selecao: #E1E1E1;
+
+  --background: #171717;
+  --foreground: #ffffff;
+
+  --font-montserrat: "Montserrat", system-ui, sans-serif;
+
+  --color-verde-100: #0FF25E;
+  --color-verde-200: #099B3C;
+  --color-verde-300: #040F0F;
+
+  --color-azul-100: #35ADDC;
+  --color-azul-200: #206784;
+  --color-azul-300: #0C2A33;
+
+  --color-amarelo-100: #F5B700;
+  --color-amarelo-200: #9D7600;
+  --color-amarelo-300: #463400;
+
+  --color-quatro: var(--quatro);
+
+
+  /* ---projetos colaborativos--- */
+  /* --InkluaTicket-- */
+  --color-roxo-inklua-100: #f0f3fd;
+  --color-roxo-inklua-200: #574cd5;
+  --color-roxo-inklua-300: #231f47;
+
+  /* -- devChatCLI -- */
+  --color-devChat-100: #FFFFFF;
+  --color-devChat-200: #525252;
+  --color-devChat-300: #171717;
+
+    /* -- islandTainho -- */
+  --color-island-azul-100: #ECFEFF;
+  --color-island-azul-200: #104E64;
+  --color-island-azul-300: #053345;
+
+}
+:root {
+  --background: #0D1118;
+  --secondary-background: #FEFEFF;
+  --background-input: #ECFEFF;
+  --secondary: #13BFD7;
+  --tertiary: #1F9FC0;
+  --quatro: #0F4A5C;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-body {
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-inter);
+.animate {
+  animation: fade-in 0.5s ease-out;
+  animation-fill-mode: forwards;
+}
+
+/* botoes reutilizaveis */
+.btNormal {
+  @apply bg-verde-300 text-verde-100 border-verde-100 border-2 font-semibold hover:shadow-xl hover:text-xl hover:drop-shadow-[0_0_10px_#0FF25E] transition-all rounded-2xl p-2;
+}
+
+.btN2 {
+  @apply px-8 py-4 rounded-2xl font-medium border-2 border-verde-100 bg-verde-300 hover:text-lg text-verde-100 transition-all shadow-lg hover:drop-shadow-[0_0_10px_#099B3C] hover:opacity-90;
+}
+
+.btAmarelo {
+  @apply px-8 py-2 rounded-2xl font-medium border-2 border-amarelo-100 bg-amarelo-300 hover:text-lg text-amarelo-100 transition-all shadow-lg hover:drop-shadow-[0_0_10px_#F5B700] hover:opacity-90 flex justify-center items-center gap-2;
+}
+
+.btAzul {
+  @apply px-8 py-2 rounded-2xl font-medium border-2 border-azul-100 bg-azul-300 hover:text-lg text-azul-100 transition-all shadow-lg hover:drop-shadow-[0_0_10px_#35ADDC] hover:opacity-90 flex justify-center items-center gap-2;
+}
+
+.btGitHub {
+  @apply px-8 py-2 rounded-2xl font-medium border-2 border-white bg-black hover:text-lg text-white transition-all shadow-lg hover:drop-shadow-[0_0_10px_#ffffff] hover:opacity-90 flex justify-center items-center gap-2;
+}
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
 }
