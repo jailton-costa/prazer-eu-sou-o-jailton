@@ -134,16 +134,6 @@ export default function page() {
       border: "border-gray-100",
       shadow: " hover:drop-shadow-[0_0_10px_#ffffff] transition-all",
       links: "/projeto/myGame",
-    },{
-      titulo: "My-game",
-      descricao: "Edgewake é um jogo ambientado em um mundo colapsado entre dimensões, enfrenta combates táticos inspirados em Undertale e toma decisões que influenciam o destino entre caos e esperança.",
-      imagem: "/pessoal/my-game/myGame.png",
-      corTitulo: "text-white",
-      corDescricao: "text-green-700",
-      corBg: "bg-gray-800",
-      border: "border-gray-100",
-      shadow: " hover:drop-shadow-[0_0_10px_#ffffff] transition-all",
-      links: "/projeto/myGame",
     },
   ]
 
