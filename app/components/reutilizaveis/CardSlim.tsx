@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function CardSlim({ cardSlim }: { cardSlim: any[] }) {
     return (
-        <div className="container mx-auto px-15 md:px-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+        <div className="container mx-auto px-15 md:px-10 flex flex-wrap md:flex-nowrap gap-6 md:gap-10 items-center">
             {cardSlim.map((cardSlim, index) => (
                 <Link
                     href={cardSlim.links}
@@ -11,10 +11,10 @@ export default function CardSlim({ cardSlim }: { cardSlim: any[] }) {
                     className={`
                         flex flex-col md:flex-row 
                         items-start md:items-center 
-                        w-full 
+                        w-full md:w-169 
                         rounded-2xl border-l-4 
                         ${cardSlim.corBg} ${cardSlim.border} 
-                        p-3 md:p-4
+                        p-2 md:p-2
                         hover:${cardSlim.shadow}
                     `}
                 >

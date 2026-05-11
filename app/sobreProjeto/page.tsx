@@ -9,20 +9,8 @@ export default function Page() {
       <Navbar />
 
       <main className="flex-1">
-        <section id="sobre" className="container mx-auto px-6 py-16">
+        <section id="sobre" className="container mx-auto px-6 py-10">
           <div className="max-w-3xl mx-auto">
-
-            {/* Logo */}
-            <div className="flex justify-center mb-10">
-              <Image
-                src="/JailtonLogoGrande.png"
-                alt="Logo do projeto: Prazer, eu sou o Jailton"
-                width={600}
-                height={500}
-                priority
-                className="rounded-2xl border border-azul-300 shadow-xl max-h-[280px] w-auto"
-              />
-            </div>
 
             {/* Título */}
             <header className="text-center mb-10">
