@@ -25,7 +25,7 @@ export default function page() {
       subtitulo: "O Pet Tainho é uma plataforma que centraliza rotas, dicas e informações para ajudar turistas a se locomoverem em Florianópolis de forma mais prática, rápida e segura.",
       data: "Finalizado em 04/12/2025",
       local: "florianopolis - sc",
-      imagem: "/colaboracao/islandTainho/island.png",
+      imagem: "/colaboracao/islandTainho/Island.png",
       link: "/projeto/islandTainho"
     },
     {

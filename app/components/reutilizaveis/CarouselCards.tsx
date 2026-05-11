@@ -25,7 +25,7 @@ const cards = [
     }, {
         titulo: "islandTainho",
         descricao: "O Pet Tainho é uma plataforma que centraliza rotas, dicas e informações para ajudar turistas a se locomoverem em Florianópolis de forma mais prática, rápida e segura.",
-        imagem: "/colaboracao/islandTainho/island.png",
+        imagem: "/colaboracao/islandTainho/Island.png",
         corTitulo: "text-island-azul-100",
         corDescricao: "text-island-azul-100",
         corBg: "bg-island-azul-300",

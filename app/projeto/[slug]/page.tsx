@@ -74,8 +74,8 @@ const projetos: Record<string, Projeto> = {
     tecnologias: ["TypeScript", "Node.js", "Git"],
     Icon: [SiTypescript, SiNodedotjs, SiGit],
     eventos: [
-      { imagem: "/colaboracao/DevChatCLI/DevChatCLI01.png", corBorder: "border-white", corBg: "bg-black", corText: "border-white", corShadow: "hover:drop-shadow-[0_0_10px_#ffffff] hover:opacity-90" },
-      { imagem: "/colaboracao/DevChatCLI/DevChatCLI02.png", corBorder: "border-white", corBg: "bg-black", corText: "border-white", corShadow: "hover:drop-shadow-[0_0_10px_#ffffff] hover:opacity-90" },
+      { imagem: "/colaboracao/DevChatCLI/devChatCLI01.png", corBorder: "border-white", corBg: "bg-black", corText: "border-white", corShadow: "hover:drop-shadow-[0_0_10px_#ffffff] hover:opacity-90" },
+      { imagem: "/colaboracao/DevChatCLI/devChatCLI02.png", corBorder: "border-white", corBg: "bg-black", corText: "border-white", corShadow: "hover:drop-shadow-[0_0_10px_#ffffff] hover:opacity-90" },
     ],
     dataInicio: "10/2/2026",
     dataFim: "(não ha uma data prevista para o fim do projeto)",
@@ -96,7 +96,7 @@ const projetos: Record<string, Projeto> = {
     Icon: [SiNextdotjs, SiTailwindcss, SiTypescript, SiPython, SiPrisma],
     minhaDescricao: "esse projeto foi uma excelente oportunidade de aprendizado e crescimento pessoal, alem de trabalhar em equipe com pessoas novas e desenvolver um novo projeto do zero com uma ideia totalmente diferente.",
     eventos: [
-      { imagem: "/colaboracao/islandTainho/island.png", corBorder: "border-island-azul-100", corBg: "bg-island-azul-300", corText: "border-island-azul-100", corShadow: "hover:drop-shadow-[0_0_10px_#ECFEFF] hover:opacity-90" },
+      { imagem: "/colaboracao/islandTainho/Island.png", corBorder: "border-island-azul-100", corBg: "bg-island-azul-300", corText: "border-island-azul-100", corShadow: "hover:drop-shadow-[0_0_10px_#ECFEFF] hover:opacity-90" },
       { imagem: "/colaboracao/islandTainho/island-home.png", corBorder: "border-island-azul-100", corBg: "bg-island-azul-300", corText: "border-island-azul-100", corShadow: "hover:drop-shadow-[0_0_10px_#ECFEFF] hover:opacity-90" },
       { imagem: "/colaboracao/islandTainho/island-Jornadas.png", corBorder: "border-island-azul-100", corBg: "bg-island-azul-300", corText: "border-island-azul-100", corShadow: "hover:drop-shadow-[0_0_10px_#ECFEFF] hover:opacity-90" },
       { imagem: "/colaboracao/islandTainho/island-cadastro.png", corBorder: "border-island-azul-100", corBg: "bg-island-azul-300", corText: "border-island-azul-100", corShadow: "hover:drop-shadow-[0_0_10px_#ECFEFF] hover:opacity-90" },
