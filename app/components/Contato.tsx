@@ -31,7 +31,7 @@ export default function  Contato() {
   }
 
   return (
-    <section id="contato" className="container w-xs md:w-3xl mx-auto text-center border border-verde-100 rounded-2xl p-8 md:p-15 bg-verde-300 shadow-lg group hover:drop-shadow-[0_0_20px_#099B3C] transition-all">
+    <section id="contato" className="animateTopBottom container w-xs md:w-3xl mx-auto text-center border border-verde-100 rounded-2xl p-8 md:p-15 bg-verde-300 shadow-lg group hover:drop-shadow-[0_0_20px_#099B3C] transition-opacity duration-800 hover:opacity-100">
 
       <h2 className="text-2xl md:text-3xl font-bold mb-4 text-verde-100 group-hover:drop-shadow-[0_0_3px_#099B3C] flex justify-center items-center gap-2">
         Vamos conversar <MessageCircleQuestion className="w-7 h-7"/>
@@ -54,7 +54,7 @@ export default function  Contato() {
         <div className="grid grid-cols-1 md:grid-cols-3 h-fit gap-5 justify-center trasition-all animate">
           <button
             onClick={copiarEmail}
-            className="btAmarelo"
+            className="btEmail"
           >
             <MailIcon className="w-5 h-5"/>
             {emailCop ? emailCop : "Copiar email"}

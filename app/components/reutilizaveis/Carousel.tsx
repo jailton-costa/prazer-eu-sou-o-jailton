@@ -53,12 +53,11 @@ export default function EventCarousel({ eventos }: Props) {
                         alt={evento.titulo}
                         width={800}
                         height={800}
-                        quality={90}
-                        className="w-full h-full object-center "
+                        className="w-full h-full object-fill object-center"
                     />
                 </div>
 
-                <div className="md:w-2/4 md:h-[320px] bg-verde-300 text-verde-100 rounded-b-2xl p-2 flex flex-col justify-between">
+                <div className="md:w-2/4 md:h-90 bg-verde-300 text-verde-100 rounded-b-2xl p-4 flex flex-col justify-between">
 
                     <div className="space-y-2">
                         <h1 className="text-2xl md:text-3xl font-bold">
@@ -77,7 +76,7 @@ export default function EventCarousel({ eventos }: Props) {
                         </p>
                     </div>
 
-                    <Link href={`${evento.link}`} className="btNormal text-center w-full md:w-64 h-12">
+                    <Link href={`${evento.link}`} className="btNormal text-center mt-3 w-full md:w-64 h-12">
                         Ver Detalhes
                     </Link>
                 </div>
